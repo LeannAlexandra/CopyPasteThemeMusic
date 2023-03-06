@@ -1,11 +1,9 @@
-// CodeBulletCopyPasteThemeMusic.cpp 
+
 #include <windows.h>
 
-
-
 int main() {
-    LPCWSTR pathSus = L"sus.wav";
-    LPCWSTR pathErr = L"err.wav";
+    LPCWSTR pathSus = L"sus.wav"; //The "illuminati confirmed" sound - Honestly It's the x-files theme
+    LPCWSTR pathErr = L"err.wav"; //Original WindowsXP error sound
     PlaySound(pathErr, NULL, SND_ASYNC); // play error sound after sounds are loaded.
     Sleep(100);
     while (1) {
@@ -21,9 +19,9 @@ int main() {
         {
             PlaySound(pathErr, NULL, SND_ASYNC);
         }
-        if (GetAsyncKeyState(VK_CONTROL) && (GetAsyncKeyState(VK_ESCAPE))) 
+        if (GetAsyncKeyState(VK_CONTROL) && (GetAsyncKeyState(VK_ESCAPE))) //ctrl & Excape
         {   
-            break; //ctrl & Excape
+            break; //exit
         }
        Sleep(100);
     }
