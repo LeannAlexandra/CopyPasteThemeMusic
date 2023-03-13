@@ -27,3 +27,13 @@ int main() {
     }
     return 0;
 }
+/*//TODO: Delete this comments
+Did you know, in C & C++ the following 3 references are all actually valid and gets compiled correctly? ps. you'll need to include <iostreem> to use the std:: library - 
+
+#include <iostream>
+int toDelete() {
+    int tab[3] = { 1,2,3 };
+    std::cout << tab[1] << std::endl;
+    std::cout << 1[tab] << std::endl;
+    std::cout << NULL[tab + 1] << std::endl;
+}*/
